@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es"></html><!-- el validator me ha dicho que lo ponga -->
+<html>
+<head>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>APOGEO 2050</title>
+
+
+<!-- FAVICON -->
+<link rel="icon" type="image/png" href="IMAGENES/favicon_16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="IMAGENES/favicon_32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="IMAGENES/favicon_64.png" sizes="64x64">
+
+
+<!-- ANIMACIÓN -->
+
+
+<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="CSS/estilo_textos.css">
+
+<!-- menu responsive -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="CSS/css_menu_responsive.css">
+<script src="JAVA_SCRIPT/menu_responsive.js"></script>
+
+
+<style>
+
+#patron_fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    background-repeat: repeat-y; /* No sé por qué no funciona */
+  }
+
+    .container {
+            display: flex; /* cajitas en horizontal en línea */
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+
+
+
+    .caja {
+
+        background-color: rgb(255, 255, 255);
+        text-align:center;
+        padding: 50px;
+        border-radius: 10px;
+        width: 30%;
+
+        box-sizing: border-box;
+        border: 3px solid black;
+        margin: 5px; /* Espaciado entre las cajas */
+        margin-right: 25px;
+        max-width: 90%; /*evitar que las cajas sean más anchas que la pantalla en dispositivos pequeños */
+    }
+
+
+    /* Media Query */
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .caja {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            #logoucm{
+                height: 5vh;
+            }
+            #logobbaa{
+                height: 5vh;
+            }
+        }
+
+
+    /*Salto del cuervo cortesía de chat GPT*/   
+        #logostudio{
+         animation: bounce 1s infinite;
+        }
+            @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+            }
+            40% {
+            transform: translateY(-80px);
+             }
+            60% {
+            transform: translateY(-15px);
+            }
+        }
+
+
+</style>
+</head>
+
+
+<body>
+    <!-- barra navegación -->
+<div class="topnav" id="myTopnav">
+    <a href="_CROWCREW.html" class="logo-link">
+        <img src="IMAGENES/prueba.png" class="logo_crowcrew" alt="logo_crowcrew">
+    </a>
+    <a href="index.html" class="active" id="Apogeo2050">APOGEO 2050</a>
+    <a href="2REGLAMENTO.html" id="Reglamento">Reglamento</a>  
+    <a href="3SERVICIOS.html" id="Servicios">Servicios</a>
+    <a href="5CONTACTO.html" id="contacto">Contacto</a>
+    <a href="_CROWCREW.html"index class="icon" onclick="myFunction()">
+        <span class="fa fa-bars"></span><!-- elemento vacío que representa el menú hamburguesa -->
+    </a>
+</div>
+
+ <!-- patrón fondo -->
+ <img src="IMAGENES/patron_fondo.jpg" id="patron_fondo" alt="patron fondo">
+
+
+  <!-- cajas -->
+ <div class="container" style="margin-top:120px;">
+
+    <div class="caja" style="background-color: rgb(255, 255, 255);">
+           
+            <h1>CROW CREW STUDIO</h1>
+            <p >¡Hola! Somos un equipo artístico formado por Carmen Duque Cobo, Alejandra González Dubblin, Marina López Toribio, Laura Pastor Vela y Teresa Calvo Díaz,
+                     cinco estudiantes de cuarto año de <strong>Diseño</strong> en la Facultad de Bellas Artes 
+                    de la Universidad Complutense de Madrid (UCM).  Nos unimos bajo el nombre “Crow Crew Studio” para dar vida a 
+                    un <strong>juego de mesa</strong> como parte de nuestra asignatura de Diseño de Producto, dirigida por la Dra. Claudia Alejandra 
+                    Sánchez Orozco. </p>
+             
+            <img src="IMAGENES/Logo_UCM.png" id="logoucm"
+                style="height:7vh; padding: 10px; padding-top: 32px;" alt="Logo_UCM">
+            <img src="IMAGENES/logo_bellasArtes.jpeg" id="logobbaa"
+                 style="height: 7vh; padding: 10px; padding-top: 25px; padding-bottom: 25px;" alt="logo_bellasArtes">
+    </div>
+
+    <div class="caja" style="background-color:rgb(161, 231, 164);">
+        <h1>¿POR QUÉ CROW CREW?</h1>
+        <p>El nombre "Crow Crew" tiene su origen en la naturaleza y en la idea de <strong>colaboración y trabajo en equipo.</strong>
+            La elección del nombre se basa en la inteligencia y la comunidad observada en los cuervos, 
+            conocidas por su astucia y capacidad de resolver problemas. Al adoptar el nombre "Crow Crew", 
+            queremos transmitir la idea de que nuestro estudio de diseño es como una bandada de cuervos, 
+            unidos por un objetivo común y trabajando juntos para alcanzar <strong>soluciones creativas y efectivas.</strong>
+        </p>
+        <img src="IMAGENES/crowcrew_logo.png" id="logostudio" style="height: 100px; padding-top: 115px; margin-bottom: 0;  " alt="logo_crowcrew">    
+    </div>
+
+    <div class="caja" style="background-color:rgb(236, 162, 101);">
+        <h1>VALORES</h1>
+        <p>Nuestro enfoque en la <strong>sostenibilidad y los derechos humanos</strong> nos ha llevado a investigar y desarrollar un juego de mesa
+            que no solo ofrece entretenimiento, sino que también educa e inspira a los jugadores a reflexionar sobre estas cuestiones importantes.
+       En "APOGEO 2050" queremos que todos puedan disfrutar de la emoción y la diversión del juego, ¡independientemente de su edad! 
+            Es por eso que nos enorgullece ofrecer un juego diseñado para cautivar tanto a adultos como a jóvenes.
+            Nuestro juego es ideal para jugadores <strong> partir de los 10 años</strong> de edad, 
+            lo que lo convierte en una opción perfecta para toda la familia. </p>
+
+            <img src="IMAGENES/Plant.png" style="height: 140px; padding: 10px; padding-top: 25px; margin-bottom: 0;" alt="lmagen_planta margin-bottom:0px;">
+    </div>
+  
+</div>
+
+</body>
+</html>
+
+
+    
+
+
+

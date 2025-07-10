@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es"><!-- el validator me ha dicho que lo ponga -->
+<head>
+  <title>APOGEO 2050</title>
+<!-- FAVICON -->
+<link rel="icon" type="image/png" href="IMAGENES/favicon_16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="IMAGENES/favicon_32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="IMAGENES/favicon_64.png" sizes="64x64">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+
+
+<meta name="description" content="¡Bienvenido a Apogeo 2050, el juego de mesa donde el destino del mundo está en tus manos! 
+La humanidad enfrenta una encrucijada crítica, las primeras consecuencias del cambio climático han diezmado la población.
+Los políticos y renombradas organizaciones del mundo se han reunido para establecer un plan de acción con fecha límite 2050.
+cuatro facciones poderosas se alzan para disputar el control del planeta. Post Antropoceno, Greentocracy, Extinction Express y Humans Inc. 
+compiten ferozmente por imponer sus visiones y medidas para el futuro de la Tierra.">
+
+
+<!-- menu responsive -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="CSS/css_menu_responsive.css">
+
+
+<a href="javascript:void(0);" class="topnav-icons fa fa-menu w3-hide-large w3-left w3-bar-item w3-button ga-nav" style="line-height:1.1;padding-top:8px!important;padding-bottom:8px!important;" onclick="open_menu()" title="Menu"></a>
+
+
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="CSS/estilo_textos.css">
+
+
+<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<!-- animación -->
+<link rel="stylesheet" type="text/css" href="CSS/animacion.css">
+
+ <style>
+  
+  #logo {
+  width: 600px; 
+  max-width: 1300px; 
+  height: auto; 
+  position: absolute;
+  z-index: -2;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  animation-name: rotate;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+
+#faccion_ilustracion {
+  width: auto;
+  height: 50%;
+  position: absolute;
+  z-index: -2;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+
+
+#patron_fondo {
+   display: flex;
+   position:fixed;
+   z-index: -3;
+   width:100%; 
+   height:100vh;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+   margin-bottom:40px;
+   /*background-image:IMAGENES/patron_fondo.jpg;
+   background:repeat;*/
+
+}
+
+#descripcion{
+  width: 600px; 
+  margin: 0 auto; 
+  font-size: 20px;
+  padding: 20px;
+  }
+
+</style>
+</head>
+<body>
+
+<!-- barra navegación -->
+<div class="topnav" id="myTopnav">
+    <a href="_CROWCREW.html" class="logo-link">
+        <img src="IMAGENES/prueba.png" class="logo_crowcrew" alt="logo_crowcrew">
+    </a>
+    <a href="index.html" class="active" id="Apogeo2050">APOGEO 2050</a>
+    <a href="2REGLAMENTO.html" id="Reglamento">Reglamento</a>   
+    <a href="3SERVICIOS.html" id="Servicios">Servicios</a>
+    <a href="5CONTACTO.html" id="contacto">Contacto</a>
+    <a href="#"  class="icon" onclick="myFunction()">
+        <span class="fa fa-bars"></span><!-- elemento vacío que representa el menú hamburguesa -->
+    </a>
+</div>
+
+<!-- landing -->
+<div class="full-width-div">
+    <img src="IMAGENES/patron_fondo.jpg" id="patron_fondo" alt="patron fondo">
+       <img src="IMAGENES/logo_apogeo.png" id="logo" alt="logotipo">   
+       <img src="IMAGENES/facciones_portada.png" id="faccion_ilustracion" alt="ilustración">   
+</div>
+
+</body>
+</html>

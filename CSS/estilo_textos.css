@@ -1,0 +1,47 @@
+h1{
+  font-family: antonio,sans serif;
+  margin-top: 0;
+  color: black;
+}
+
+P{
+    margin: 0;
+    padding: 15px;
+    font-family: roboto; 
+    font-size: 16px; 
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 20px
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  font-family: roboto; 
+  font-size: 16px; 
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 20px
+}
+
+
+
+.texto {
+    flex: 1; /* La columna del texto ocupará el 50% del ancho del contenedor */
+    padding: 20px; /* Añade un espacio alrededor del texto para separarlo de los bordes */
+  }
+  
+  .imagen {
+    flex: 1; /* La columna de la imagen ocupará el 50% del ancho del contenedor */
+  }
+  
+  .imagen img {
+    width: 100%; /* Ajusta la imagen para que ocupe todo el espacio disponible dentro de su contenedor */
+    height: auto; /* Asegura que la altura de la imagen se ajuste automáticamente para mantener la proporción */
+  }
+
+  @media (min-width: 600px) {
+    .two-column-paragraph {
+      column-count: 2;
+    }
+  }
